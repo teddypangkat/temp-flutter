@@ -76,13 +76,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607410044584</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="education">
+      <created>1607470617284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607470617284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="badge" />
-    <option name="LAST_COMMIT_MESSAGE" value="badge" />
+    <MESSAGE value="education" />
+    <option name="LAST_COMMIT_MESSAGE" value="education" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606274010298">
@@ -94,10 +102,10 @@
     </state>
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1606276145601" />
     <state x="533" y="179" key="#com.intellij.ide.util.MemberChooser/0.23.1440.811@0.23.1440.811" timestamp="1607401419521" />
-    <state x="278" y="23" key="CommitChangelistDialog2" timestamp="1607410044334">
+    <state x="278" y="23" key="CommitChangelistDialog2" timestamp="1607470617011">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="278" y="23" key="CommitChangelistDialog2/0.23.1440.811@0.23.1440.811" timestamp="1607410044334" />
+    <state x="278" y="23" key="CommitChangelistDialog2/0.23.1440.811@0.23.1440.811" timestamp="1607470617011" />
     <state width="1398" height="208" key="GridCell.Tab.0.bottom" timestamp="1607400211458">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
@@ -123,9 +131,9 @@
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606274023346" />
     <state x="221" y="103" key="SettingsEditor/0.23.1440.811@0.23.1440.811" timestamp="1607351648945" />
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1607410045907">
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1607470620184">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.811@0.23.1440.811" timestamp="1607410045907" />
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.811@0.23.1440.811" timestamp="1607470620184" />
   </component>
 </project>

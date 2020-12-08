@@ -79,6 +79,49 @@ class About extends StatelessWidget {
           ],
         ));
 
+    Widget profileExperience = Container(
+        color: Colors.white,
+        padding: const EdgeInsets.all(12),
+        margin: const EdgeInsets.only(top: 22),
+        child:
+        Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            _buildAddHeader('Experience'),
+            _buildItemList('Technical Lead',
+                'WorkLifeBeyond',
+                'Feb 2010 - Present',
+                'Bandung Area, West Java, Indonesia',
+                'I Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
+                    'Alps. Situated 1,578 meters above sea level, it is one of the '
+                    'larger Alpine Lakes. A gondola ride from Kandersteg, followed by a '
+                    'half-hour walk through pastures and pine forest, leads you to the '
+                    'lake, which warms to 20 degrees Celsius in the summer. Activities '
+                    'enjoyed here include rowing, and riding the summer toboggan run.'),
+
+            _buildItemList('Technical Lead',
+                'Digital Creativa Asia',
+                '2011 - Present',
+                'Bandung Area, West Java, Indonesia', 'I Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
+                    'Alps. Situated 1,578 meters above sea level, it is one of the '
+                    'larger Alpine Lakes. A gondola ride from Kandersteg, followed by a '
+                    'half-hour walk through pastures and pine forest, leads you to the '
+                    'lake, which warms to 20 degrees Celsius in the summer. Activities '
+                    'enjoyed here include rowing, and riding the summer toboggan run.'),
+            _buildLineDivider(),
+            Center(
+              child: Text(
+                'View all Experience',
+                style: TextStyle(fontSize: 14, color: Colors.blueAccent),
+              ),
+            )
+          ],
+        )
+
+
+    );
+
     Widget profileEducation = Container(
       color: Colors.white,
       padding: const EdgeInsets.all(12),
@@ -89,7 +132,7 @@ class About extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               _buildAddHeader('Education'),
-              _buildItemListducation('Institue Teknologi Bandung',
+              _buildItemList('Institue Teknologi Bandung',
                   'Master degree informatics',
                   '2015 - 2017',
                   'Bandung Area, West Java, Indonesia', 'I Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
@@ -99,7 +142,7 @@ class About extends StatelessWidget {
                       'lake, which warms to 20 degrees Celsius in the summer. Activities '
                       'enjoyed here include rowing, and riding the summer toboggan run.'),
 
-              _buildItemListducation('Institue Teknologi Bandung',
+              _buildItemList('Institue Teknologi Bandung',
                   'Master degree informatics',
                   '2011 - 2014',
                   'Bandung Area, West Java, Indonesia', 'I Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
@@ -129,7 +172,9 @@ class About extends StatelessWidget {
             body: Container(
               color: Colors.grey[300],
               child: ListView(
-                children: [profileBiodata, profileBagde, profileCompany, profileEducation],
+                children: [profileBiodata, profileBagde, profileCompany,
+                  profileExperience,
+                  profileEducation],
               ),
             )));
   }
@@ -283,7 +328,7 @@ Column _buildAddHeader(String title) {
     );
 }
 
-Container _buildItemListducation(String titleEducation, String degree, String year,
+Container _buildItemList(String titleEducation, String degree, String year,
 String address, String desc) {
       return Container(padding: EdgeInsets.all(12),
       child: Column(
@@ -291,7 +336,7 @@ String address, String desc) {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-      _buildHeaderItemListEducation(titleEducation, degree),
+      _buildHeaderItemList(titleEducation, degree),
       SizedBox(height: 10,),
       Text(year, style: TextStyle(color: Colors.black45, fontSize: 12),),
       Text(address, style: TextStyle(color: Colors.black45, fontSize: 12),),
@@ -307,7 +352,7 @@ String address, String desc) {
       );
 }
 
-Row _buildHeaderItemListEducation(String title, String degree) {
+Row _buildHeaderItemList(String title, String degree) {
     return Row(
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
