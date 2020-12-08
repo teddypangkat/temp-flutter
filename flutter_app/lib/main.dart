@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/about.dart';
 
 void main() {
   runApp(MaterialApp(title: 'My App',
-    home: MyApp(),
+    home: About(),
   ));
 }
+
+
 
 class MyApp extends StatelessWidget {
 
@@ -103,7 +106,7 @@ class MyApp extends StatelessWidget {
         body: ListView(children: [
             headerProfileSection,
             biodataProfileSection,
-          contactProfileSection
+            contactProfileSection
         ],)
         ),
 
